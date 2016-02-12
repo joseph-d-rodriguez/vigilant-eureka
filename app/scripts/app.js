@@ -35,6 +35,11 @@ angular
         controller: 'LeaderboardCtrl',
         controllerAs: 'leaderboard'
       })
+			.when('/leaderboards/:slug', {
+				templateUrl: 'views/leaderboard-details.html',
+				controller: 'LeaderboardDetailsCtrl',
+				controllerAs: 'leaderboarddetails'
+			})
       .otherwise({
         redirectTo: '/'
       });

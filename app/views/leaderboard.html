@@ -1,1 +1,7 @@
 <p>This is the leaderboard view.</p>
+<div>
+	<h2>Leaderboards</h2>
+	<ul>
+		<li ng-repeat="l in leaderboard.leaderboards.byId"><a ng-href="#{{l.url}}">{{l.name}}</a></li>
+	</ul>
+</div>

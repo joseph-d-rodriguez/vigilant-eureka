@@ -1,0 +1,31 @@
+{
+	"byId": {
+		"l1": {
+			"id": "l1",
+			"slug": "my-sm4sh-pocket",
+			"name": "My Sm4sh Character Pocket Priority",
+			"url": "/leaderboards/my-sm4sh-pocket"
+		},
+		"l2": {
+			"id": "l2",
+			"slug": "op-sm4sh-chars",
+			"name": "OP Sm4sh Characters D:<",
+			"url": "/leaderboards/op-sm4sh-chars"
+		}
+	},
+
+	"bySlug": {
+		"my-sm4sh-pocket": {
+			"id": "l1",
+			"slug": "my-sm4sh-pocket",
+			"name": "My Sm4sh Character Pocket Priority",
+			"url": "/leaderboards/my-sm4sh-pocket"
+		},
+		"op-sm4sh-chars": {
+			"id": "l2",
+			"slug": "op-sm4sh-chars",
+			"name": "OP Sm4sh Characters D:<",
+			"url": "/leaderboards/op-sm4sh-chars"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+<p>leaderboard-details.html</p>
+<h3>{{leaderboarddetails.leaderboard.name}}</h3>
+<ul>
+	<li ng-repeat="obj in leaderboarddetails.leaderboard.data">
+		<div ng-repeat="column in leaderboarddetails.leaderboard.columns">
+			<p>{{column}}: <span style="font-weight: bold;">{{obj[column]}}</span></p>
+		</div>
+	</li>
+</ul>

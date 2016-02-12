@@ -1,0 +1,28 @@
+{
+	"id": "l2",
+	"slug": "op-sm4sh-chars",
+	"name": "OP Sm4sh Characters D:<",
+	"data": [
+		{
+			"name": "Shiek"
+		},
+		{
+			"name": "Diddy Kong"
+		},
+		{
+			"name": "Mario"
+		},
+		{
+			"name": "Luigi"
+		},
+		{
+			"name": "Zero Suit Samus"
+		},
+		{
+			"name": "Corrin"
+		},
+		{
+			"name": "Game & Watch"
+		}
+	]
+}

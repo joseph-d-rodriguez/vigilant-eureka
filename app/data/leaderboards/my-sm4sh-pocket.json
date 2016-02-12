@@ -1,0 +1,45 @@
+{
+	"id": "l1",
+	"name": "My Sm4sh Character Pocket Priority",
+	"slug": "my-sm4sh-pocket",
+	"data": [
+		{
+			"name": "Ganondorf",
+			"url": "www.ssbwiki.com/Ganondorf_(SSB4)",
+			"img": "http://vignette2.wikia.nocookie.net/ssb/images/2/23/Ganondorf_SSB4.png/revision/latest?cb=20150902075029"
+		},
+		{
+			"name": "Wii Fit Trainer"
+		},
+		{
+			"name": "Zelda"
+		},
+		{
+			"name": "Mega Man"
+		},
+		{
+			"name": "Lucas"
+		},
+		{
+			"name": "Mewtwo"
+		},
+		{
+			"name": "Bayonetta"
+		},
+		{
+			"name": "Bowser Jr"
+		},
+		{
+			"name": "Link"
+		},
+		{
+			"name": "Bowser"
+		},
+		{
+			"name": "Toon Link"
+		},
+		{
+			"name": "Ryu"
+		}
+	]
+}
