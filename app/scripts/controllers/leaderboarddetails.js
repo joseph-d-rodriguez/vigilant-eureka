@@ -8,20 +8,20 @@
  * Controller of the ciLeaderboardApp
  */
 angular.module('ciLeaderboardApp')
-  .controller('LeaderboardDetailsCtrl', function (leaderboard, $location) {
+  .controller('LeaderboardDetailsCtrl', function (leaderboard, $routeParams) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-	
-		this.slug = $location.path().split('/')[$location.path().split('/').length-1];
 		var self = this;
 
 		leaderboard
-			.getLeaderboard(this.slug)
+			.getLeaderboard($routeParams.slug)
 			.then(function leaderboardDataReceivedHandler(leaderboardResponse) {
+console.log('wtf');
+console.log('response.data: ', leaderboardResponse.data);
 				self.leaderboard = leaderboardResponse.data;
 				self.leaderboard.columns = Object.keys(self.leaderboard.data[0]);
 			})

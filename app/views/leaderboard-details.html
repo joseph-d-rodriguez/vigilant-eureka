@@ -1,9 +1,19 @@
-<p>leaderboard-details.html</p>
-<h3>{{leaderboarddetails.leaderboard.name}}</h3>
-<ul>
-	<li ng-repeat="obj in leaderboarddetails.leaderboard.data">
-		<div ng-repeat="column in leaderboarddetails.leaderboard.columns">
-			<p>{{column}}: <span style="font-weight: bold;">{{obj[column]}}</span></p>
-		</div>
-	</li>
-</ul>
+<div class="row" id="leaderboardDetailsHeader">
+	<h3 class="col-xs-12">{{leaderboarddetails.leaderboard.name}}</h3>
+</div>
+
+<div class="row" id="leaderboardDataTable">
+	<h4 class="col-xs-12">Table</h4>
+	<table class="col-xs-12 leaderboard-data-table">
+		<tr class="leaderboard-data-table-header-row">
+			<th class="leaderboard-data-table-header-value" ng-repeat="header in leaderboarddetails.leaderboard.columns">{{header}}</th>
+		</tr>
+		<tr class="leaderboard-data-table-data-row" ng-repeat="row in leaderboarddetails.leaderboard.data">
+			<td class="leaderboard-data-table-data-value" ng-repeat="dataColumn in leaderboarddetails.leaderboard.columns">
+				<span ng-show="dataColumn !== 'img' && dataColumn !== 'url'">{{row[dataColumn]}}</span>
+				<a ng-show="dataColumn === 'url'" ng-href="{{row[dataColumn]}}">{{row[dataColumn]}}</a>
+			</td>
+		</tr>
+	</table>
+</div>
+
