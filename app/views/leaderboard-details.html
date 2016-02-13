@@ -4,16 +4,19 @@
 
 <div class="row" id="leaderboardDataTable">
 	<h4 class="col-xs-12">Table</h4>
-	<table class="col-xs-12 leaderboard-data-table">
-		<tr class="leaderboard-data-table-header-row">
-			<th class="leaderboard-data-table-header-value" ng-repeat="header in leaderboarddetails.leaderboard.columns">{{header}}</th>
-		</tr>
-		<tr class="leaderboard-data-table-data-row" ng-repeat="row in leaderboarddetails.leaderboard.data">
-			<td class="leaderboard-data-table-data-value" ng-repeat="dataColumn in leaderboarddetails.leaderboard.columns">
-				<span ng-show="dataColumn !== 'img' && dataColumn !== 'url'">{{row[dataColumn]}}</span>
-				<a ng-show="dataColumn === 'url'" ng-href="{{row[dataColumn]}}">{{row[dataColumn]}}</a>
-			</td>
-		</tr>
-	</table>
+	<div class="col-xs-12">
+		<table class="leaderboard-data-table">
+			<tr class="leaderboard-data-table-header-row">
+				<th class="leaderboard-data-table-header-value" ng-repeat="header in leaderboarddetails.leaderboard.columns">{{header}}</th>
+			</tr>
+			<tr class="leaderboard-data-table-data-row" ng-repeat="row in leaderboarddetails.leaderboard.data">
+				<td class="leaderboard-data-table-data-value" ng-repeat="dataColumn in leaderboarddetails.leaderboard.columns">
+					<span ng-show="dataColumn !== 'img' && dataColumn !== 'url'">{{row[dataColumn]}}</span>
+					<a ng-show="dataColumn === 'url'" ng-href="{{row[dataColumn]}}">{{row[dataColumn]}}</a>
+					<img ng-show="dataColumn === 'img'" ng-src="{{row[dataColumn]}}" >
+				</td>
+			</tr>
+		</table>
+	</div>
 </div>
 
